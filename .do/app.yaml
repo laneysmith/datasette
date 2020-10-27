@@ -1,0 +1,9 @@
+name: "datasette-test-application"
+services: 
+  - dockerfilePath: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/laneysmith/datasette
+    # http_port: 7379
+    routes: 
+      - path: /
