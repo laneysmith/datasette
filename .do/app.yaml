@@ -4,15 +4,10 @@ services:
     github:
       branch: main
       repo: laneysmith/datasette
-#     git:
-#       branch: main
-#       repo_clone_url: https://github.com/laneysmith/datasette
-    # http_port: 7379
-    routes: 
-      - path: /
 databases:
   - name: test
     engine: PG
     version: 12
     production: false
-#     size: db-s-dev-database
+    size: db-s-dev-database
+    num_nodes: 1
