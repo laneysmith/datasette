@@ -1,10 +1,4 @@
 name: "datasette-test-application"
-databases:
-  - name: datasette-dev-db
-    version: 12
-    size: db-s-dev-database
-    num_nodes: 1
-    engine: PG
 services: 
   - dockerfilePath: Dockerfile
     github:
@@ -16,3 +10,9 @@ services:
     # http_port: 7379
     routes: 
       - path: /
+databases:
+  - name: "datasette-dev-db"
+    version: 12
+    size: "db-s-dev-database"
+    num_nodes: 1
+    engine: "PG"
