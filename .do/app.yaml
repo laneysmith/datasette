@@ -1,9 +1,4 @@
 name: "datasette-test-application"
-services: 
-  - dockerfilePath: Dockerfile
-    github:
-      branch: main
-      repo: laneysmith/datasette
 databases:
   - name: test
     engine: PG
