@@ -11,7 +11,7 @@ services:
     routes: 
       - path: /
 databases:
-  - name: datasette-dev-db
+  - name: test
     engine: PG
     version: 12
     production: false
