@@ -3,7 +3,7 @@ services:
   - dockerfilePath: Dockerfile
     github:
       branch: main
-      repo: https://github.com/laneysmith/datasette
+      repo: laneysmith/datasette
 #     git:
 #       branch: main
 #       repo_clone_url: https://github.com/laneysmith/datasette
