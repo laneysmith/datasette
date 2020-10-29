@@ -1,9 +1,8 @@
 spec:
-  name: "datasette-test-application"
-  services: 
-    - dockerfile_path: Dockerfile
-      github:
-        branch: main
-        repo: laneysmith/datasette
-  databases:
-    - name: test-dev-db
+  name: datasette-test-application
+  services:
+  - name: web
+    dockerfile_path: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/laneysmith/datasette
