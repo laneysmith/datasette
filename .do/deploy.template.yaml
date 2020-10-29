@@ -1,7 +1,5 @@
 spec:
   name: datasette-test-application
-  routes: # not required, defaults to [{ path: '/'}]
-  - path: /
   services:
   - name: web
     dockerfile_path: Dockerfile
@@ -16,5 +14,7 @@ spec:
     - key: ANOTHER_THING
       scope: BUILD_TIME
       type: SECRET
+    routes: # not required, defaults to [{ path: '/'}]
+    - path: /
   databases:
   - name: thingy
