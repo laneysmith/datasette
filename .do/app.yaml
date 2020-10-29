@@ -6,8 +6,4 @@ spec:
           branch: main
           repo: laneysmith/datasette
     databases:
-      - name: test
-        engine: PG
-        version: "12"
-        size: db-s-dev-database
-        num_nodes: 1
+      - name: test-dev-db
