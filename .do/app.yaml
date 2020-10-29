@@ -1,12 +1,13 @@
-name: "datasette-test-application"
-services: 
-  - dockerfile_path: Dockerfile
-    github:
-      branch: main
-      repo: laneysmith/datasette
-databases:
-  - name: test
-    engine: PG
-    version: "12"
-    size: db-s-dev-database
-    num_nodes: 1
+spec:
+  name: "datasette-test-application"
+    services: 
+      - dockerfile_path: Dockerfile
+        github:
+          branch: main
+          repo: laneysmith/datasette
+    databases:
+      - name: test
+        engine: PG
+        version: "12"
+        size: db-s-dev-database
+        num_nodes: 1
