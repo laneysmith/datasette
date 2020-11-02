@@ -1,7 +1,7 @@
 spec:
   name: datasette-test-application # required for DetectApp & CreateApp
   services:
-  - name: web # required for CreateApp only, UI will populate with 
+  - name: web # required for CreateApp only; if omitted, UI will populate with app name
     dockerfile_path: Dockerfile
     git:
       branch: main
@@ -17,7 +17,7 @@ spec:
     routes: # not required, defaults to [{ path: '/'}]
     - path: /
   databases:
-  - name: some-test-db # not required for DetectApp, required for CreateApp
+  - name: some-test-db # not required for DetectApp, required for CreateApp; UI defaults this to 'db' if omitted
     engine: PG # not required for DetectApp or CreateApp, defaults to engine=PG and version=12
-    version: "12" # see above
+    version: "12" # same as engine
     
