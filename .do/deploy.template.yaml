@@ -3,6 +3,7 @@ spec:
   services:
   - name: web # required for CreateApp only; if omitted, UI will populate with app name
     #dockerfile_path: Dockerfile
+    environment_slug: gatsby
     git:
       branch: main
       repo_clone_url: https://github.com/laneysmith/datasette
