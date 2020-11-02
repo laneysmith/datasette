@@ -17,4 +17,7 @@ spec:
     routes: # not required, defaults to [{ path: '/'}]
     - path: /
   databases:
-  - engine: MYSQL
+  - name: some-test-db # not required for DetectApp, required for CreateApp
+    engine: PG # not required for DetectApp or CreateApp, default to PG
+    version: 12 # 
+    
