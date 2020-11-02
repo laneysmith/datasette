@@ -17,4 +17,4 @@ spec:
     routes: # not required, defaults to [{ path: '/'}]
     - path: /
   databases:
-  - name: thingy
+  - engine: MYSQL
