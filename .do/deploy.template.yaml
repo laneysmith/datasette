@@ -1,7 +1,8 @@
 spec:
   name: datasette-test-application # required for DetectApp & CreateApp
   services:
-  - dockerfile_path: Dockerfile
+  - name: web-app # required for CreateApp only; if omitted, UI will populate with app name
+    dockerfile_path: Dockerfile
     # environment_slug: 
     git:
       branch: main
