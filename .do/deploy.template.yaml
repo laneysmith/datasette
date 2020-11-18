@@ -6,7 +6,7 @@ spec:
     # environment_slug: 
     git:
       branch: main
-      repo_clone_url: https://github.com/laneysmith/datasette
+      repo_clone_url: https://github.com/simonw/datasette
     envs: # not required
     - key: SOME_THING
       value: thingy
